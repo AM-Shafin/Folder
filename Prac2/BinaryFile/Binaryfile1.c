@@ -1,3 +1,4 @@
+//A C program that copy paste a image file into new file Showty
 #include <stdio.h>
 #include <stdlib.h>
 
