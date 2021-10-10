@@ -1,2 +1,0 @@
-This is something written in a text file for test purpose. 
-And This second line written from Vim using bash. :)
