@@ -1,0 +1,12 @@
+2. Given in input an integer N, commmunicate if it is negative, positive or null.
+
+	PROBLEM ANALYSIS
+
+	Problem analysis is similar to the previous one, with  an extra check.
+If the number requested in input is greater than zero, then it is positive, 
+but if it is not, we cannot say that the numebr is negative: it could be null. 
+So let's check if the number could be null. So let's check if the number is less than zero.
+If the number is not greater or less than zero, then it is null.
+
+INPUT DATA: N(integer) 
+OUTPUT DATA: Massage (The number is positive - The number is negative - The number is null)

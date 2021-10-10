@@ -1,0 +1,40 @@
+main.c: In function 'main':
+main.c:25:40: warning: passing argument 2 of 'strtok' makes pointer from integer without a cast [-Wint-conversion]
+   25 |             char* token = strtok(line, '\t'); // get (and ignore) student number
+      |                                        ^~~~
+      |                                        |
+      |                                        int
+In file included from main.c:3:
+c:\mingw\include\string.h:91:40: note: expected 'const char *' but argument is of type 'int'        
+   91 | _CRTIMP __cdecl __MINGW_NOTHROW  char *strtok (char *, const char *);
+      |                                        ^~~~~~
+main.c:26:34: warning: passing argument 2 of 'strtok' makes pointer from integer without a cast [-Wint-conversion]
+   26 |             token = strtok(line, '\t'); // get score
+      |                                  ^~~~
+      |                                  |
+      |                                  int
+In file included from main.c:3:
+c:\mingw\include\string.h:91:40: note: expected 'const char *' but argument is of type 'int'        
+   91 | _CRTIMP __cdecl __MINGW_NOTHROW  char *strtok (char *, const char *);
+      |                                        ^~~~~~
+main.c:32:28: error: invalid operands to binary + (have 'char *' and 'char *')
+   32 |         fputs(fileNames[i] + "\t" + std::to_string(average), averageFile);
+      |               ~~~~~~~~~~~~ ^
+      |                        |   |
+      |                        |   char *
+      |                        char *
+main.c:32:37: error: 'std' undeclared (first use in this function)
+   32 |         fputs(fileNames[i] + "\t" + std::to_string(average), averageFile);
+      |                                     ^~~
+main.c:32:37: note: each undeclared identifier is reported only once for each function it appears inmain.c:32:40: error: expected ')' before ':' token
+   32 |         fputs(fileNames[i] + "\t" + std::to_string(average), averageFile);
+      |                                        ^
+      |                                        )
+main.c:32:9: error: too few arguments to function 'fputs'
+   32 |         fputs(fileNames[i] + "\t" + std::to_string(average), averageFile);
+      |         ^~~~~
+In file included from main.c:1:
+c:\mingw\include\stdio.h:708:41: note: declared here
+  708 | _CRTIMP __cdecl __MINGW_NOTHROW  int    fputs (const char *, FILE *);
+      |                                         ^~~~~
+PS E:\LP\Cpro\sublime\Prac2\exercise>
