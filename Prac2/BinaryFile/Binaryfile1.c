@@ -1,4 +1,4 @@
-//A C program that copy paste a image file into new file Showty
+//This is a C program that read a image file as binary and write same content of it in a new image file.
 #include <stdio.h>
 #include <stdlib.h>
 
