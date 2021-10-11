@@ -1,3 +1,4 @@
+//A program that shows how A string pointer work in C.
 #include <stdio.h>
 
 int main()
