@@ -10,7 +10,7 @@ int main(){
 
 	fp_in = fopen(input_file, "rb");
 	if (fp_in == NULL) {
-		perror("Oops! File opening Feiled");
+		perror("Oops! File opening failed");
 		return EXIT_FAILURE;
 	}
 
